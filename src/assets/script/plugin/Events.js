@@ -1,0 +1,1 @@
+EVENT={},EVENT._customEvent=new cc.EventTarget,EVENT.addListener=function(e,n,t){EVENT._customEvent.on(e,n,t),t&&t.node&&t.node.addComponent("EventRemover").addEventParam({name:e,func:n,target:t})},EVENT.removeListener=function(e,n,t){EVENT._customEvent.off(e,n,t)},EVENT.dispatchNotify=function(e,n){EVENT._customEvent.emit(e,n)};
