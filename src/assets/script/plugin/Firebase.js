@@ -1,0 +1,1 @@
+Firebase={},function(){var i=null,a=[];Firebase.link=function(e,n){var r=new Promise(function(e){i?e(i):a.push({resolve:e})});return 1==a.length&&cc.loader.load(e,function(e){if(e)return cc.log("firebase error: "+e);i=firebase.initializeApp(n).database(),a.forEach(function(e){e.resolve(i)}),a.length=0}),r}}();
